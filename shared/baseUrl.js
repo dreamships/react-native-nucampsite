@@ -1,1 +1,1 @@
-export const baseUrl = 'http://10.0.0.6:3001/'
+export const baseUrl = 'https://aaronmichael.cyclic.app/nucamp-data/';
