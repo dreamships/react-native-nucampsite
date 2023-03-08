@@ -24,7 +24,6 @@ import FavoritesScreen from './FavoritesScreen';
 import LoginScreen from './LoginScreen';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/core';
 
-
 const Drawer = createDrawerNavigator();
 
 const screenOptions = {
@@ -244,23 +243,21 @@ const Main = () => {
                 drawerContent={CustomDrawerContent}
                 drawerStyle={{ backgroundColor: '#CEC8FF' }}
             >
-
-            <Drawer.Screen
-                name='Login'
-                component={LoginNavigator}
-                options={{
-                    drawerIcon: ({ color }) => (
-                        <Icon
-                            name='sign-in'
-                            type='font-awesome'
-                            size={24}
-                            iconStyle={{ width: 24 }}
-                            color={color}
-                        />
-                    )
-                }}
-            />
-
+                <Drawer.Screen
+                    name='Login'
+                    component={LoginNavigator}
+                    options={{
+                        drawerIcon: ({ color }) => (
+                            <Icon
+                                name='sign-in'
+                                type='font-awesome'
+                                size={24}
+                                iconStyle={{ width: 24 }}
+                                color={color}
+                            />
+                        )
+                    }}
+                />
                 <Drawer.Screen
                     name='Home'
                     component={HomeNavigator}
